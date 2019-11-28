@@ -1,0 +1,7 @@
+.loginform{
+	margin-top: 1rem;
+	width: 50%;
+}
+.fa-edit,.fa-trash-alt{
+	color: #74797bcc !important;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="/public/css/style.css">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class='container'>
+		<h3>Portfolio</h3>
+		<hr>
+		<section>
+			<div class="alert alert-danger alert-dismissible" style="display: none;" id="msg_div">
+			  	<button type="button" class="close" data-dismiss="alert">&times;</button>
+			  	<strong id="msg"></strong>
+			</div>
+			<div class="card loginform">
+				<form method="post" class="text-center border border-light p-5" id="loginform">
+				    <p class="h4 mb-4">Sign in</p>
+				    <!-- Email -->
+				    <input type="text" name="username" id='Username' class="form-control mb-4" placeholder="Username">
+				    <!-- Password -->
+				    <input type="Password" name="password" id="password" class="form-control mb-4" placeholder="Password">
+				    <div class="d-flex justify-content-around">
+				        <div>
+				            <!-- Remember me -->
+				            <div class="custom-control custom-checkbox">
+				                <input type="checkbox" class="custom-control-input" name="remember_me" id="FormRemember">
+				                <label class="custom-control-label" for="FormRemember">Remember me</label>
+				            </div>
+				        </div>
+				        <div>
+				            <!-- Forgot password -->
+				            <a href="">Forgot password?</a>
+				        </div>
+				    </div>
+				    <!-- Sign in button -->
+				    <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+				    <!-- Register -->
+				    <p>Not a member?
+				        <a href="">Register</a>
+				    </p>
+				    <!-- Social login -->
+				    <p>or sign in with:</p>
+
+				    <a type="button" class="light-blue-text mx-2">
+				        <i class="fab fa-facebook-f"></i>
+				    </a>
+				    <a type="button" class="light-blue-text mx-2">
+				        <i class="fab fa-twitter"></i>
+				    </a>
+				    <a type="button" class="light-blue-text mx-2">
+				        <i class="fab fa-linkedin-in"></i>
+				    </a>
+				    <a type="button" class="light-blue-text mx-2">
+				        <i class="fab fa-github"></i>
+				    </a>
+				</form>
+				<!-- Default form login -->	
+			</div>			
+		</section>
+	<div>
+	<script type="text/javascript" src="/public/js/index.js"></script>	
+</body>
+</html>

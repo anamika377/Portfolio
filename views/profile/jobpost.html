@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post a Job</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h3>Post a Job</h3>
+		<hr>
+		<div class="card">
+			<div class="alert alert-danger alert-dismissible" style="display: none;" id="msg_div">
+			  	<button type="button" class="close" data-dismiss="alert">&times;</button>
+			  	<strong id="msg"></strong>
+			</div>
+			<form action="/api/postjob" method="post" class=" border border-light p-5">
+			    <!-- Job title -->
+			    <label>Job Title:</label>
+			    <input type="text" name="job_title" id='job_title' class="form-control mb-4" placeholder="">
+			    <!-- Department -->
+			    <label>Department:</label>
+			    <input type="text" name="dept" id="password" class="form-control mb-4" placeholder="">
+			    <div class="form-group purple-border">
+					<label for="job_description">Job Description</label>
+  					<textarea class="form-control" id="job_description" name="jd" rows="3"></textarea>
+				</div>
+			    <!-- Post button -->
+			    <button class="btn btn-info btn-block my-4" type="submit">Post</button>
+			</form>
+			<!-- Job post form -->	
+		</div>
+		<a href="./profile.html">Home</a>
+	</div>
+</body>
+</html>
